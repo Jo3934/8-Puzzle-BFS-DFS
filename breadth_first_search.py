@@ -104,7 +104,7 @@ def write_path(path_formed):
             f.write(str(node.node_no) + "\t" + str(node.parent.node_no) + "\t" + str(node.cost) + "\n")
     f.close()
 #Method defining the explored nodes
-def node_explored(explored): 
+def write_node_explored(explored): 
     if os.path.exists("Node.txt"):
         os.remove("Node.txt")
 
@@ -118,7 +118,7 @@ def node_explored(explored):
         f.write("\n")
     f.close()
 
-def node_info(visited): 
+def write_node_info(visited): 
     if os.path.exists("info.txt"):
         os.remove("info.txt")
 
